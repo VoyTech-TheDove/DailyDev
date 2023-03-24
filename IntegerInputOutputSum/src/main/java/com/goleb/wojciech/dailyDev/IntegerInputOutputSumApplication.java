@@ -25,13 +25,21 @@ public class IntegerInputOutputSumApplication {
             }
             try {
                 long newNumber = Long.parseLong(inputFromUser);
-                sum = sum + newNumber;
+                sum += sumTheDigitsOfLong(newNumber);
             } catch (NumberFormatException e) {
                 System.out.println("Incorrect input");
+                exitProgramWithoutErrors();
             }
         }
     }
-
+    private static long sumTheDigitsOfLong (long number){
+        long sum = 0;
+        while (number >0) {
+            sum += number % 10;
+            number = number /10 ;
+        }
+        return sum;
+    }
     private static String getInputFromUser() {
         String line;
         System.out.println("Enter a number:");
