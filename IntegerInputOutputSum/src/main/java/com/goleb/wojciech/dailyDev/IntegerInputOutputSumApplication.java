@@ -1,5 +1,11 @@
 package com.goleb.wojciech.dailyDev;
 
+/**
+ * This is a simple program that takes numbers from input and displays a sum when "0" is inputed.
+ *
+ * @author Wojciech Golebiewski
+ * @Date 24 03 2023
+ */
 
 import java.util.Scanner;
 
@@ -24,23 +30,25 @@ public class IntegerInputOutputSumApplication {
                 System.out.println("Incorrect input");
             }
         }
-
     }
-    private static String getInputFromUser(){
+
+    private static String getInputFromUser() {
         String line;
         System.out.println("Enter a number:");
-        line =SCANNER.nextLine();
+        line = SCANNER.nextLine();
         return line;
     }
-    private static void displaySumAndExitProgram(long sum){
+
+    private static void displaySumAndExitProgram(long sum) {
         displaySumOfNumbers(sum);
         exitProgramWithoutErrors();
     }
-    private static void displaySumOfNumbers(long sum){
-        System.out.println("Sum of numbers "+sum);
+
+    private static void displaySumOfNumbers(long sum) {
+        System.out.println("Sum of numbers " + sum);
     }
+
     private static void exitProgramWithoutErrors() {
         System.exit(0);
     }
-
 }
