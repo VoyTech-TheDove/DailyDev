@@ -10,36 +10,40 @@ package com.goleb.wojciech.dailyDev;
 import java.util.Scanner;
 
 public class IntegerInputOutputSumApplication {
+
     private static final Scanner SCANNER = new Scanner(System.in);
+    public static final String EXIT_COMMAND = "0";
 
-    public static void main(String[] args) {
-
+    public void start() {
         System.out.println("Hi! \nPlease enter some numbers when prompted.\nEntering 0 will display sum of those numbers.");
 
         long sum = 0;
 
         while (true) {
             String inputFromUser = getInputFromUser();
-            if (inputFromUser.equals("0")) {
-                displaySumAndExitProgram(sum);
+            if (inputFromUser.equals(EXIT_COMMAND)) {
+                displaySum(sum);
+                break;
             }
             try {
                 long newNumber = Long.parseLong(inputFromUser);
                 sum += sumTheDigitsOfLong(newNumber);
             } catch (NumberFormatException e) {
                 System.out.println("Incorrect input");
-                exitProgramWithoutErrors();
+                break;
             }
         }
     }
-    private static long sumTheDigitsOfLong (long number){
+
+    private static long sumTheDigitsOfLong(long number) {
         long sum = 0;
-        while (number >0) {
+        while (number > 0) {
             sum += number % 10;
-            number = number /10 ;
+            number = number / 10;
         }
         return sum;
     }
+
     private static String getInputFromUser() {
         String line;
         System.out.println("Enter a number:");
@@ -47,16 +51,11 @@ public class IntegerInputOutputSumApplication {
         return line;
     }
 
-    private static void displaySumAndExitProgram(long sum) {
+    private static void displaySum(long sum) {
         displaySumOfNumbers(sum);
-        exitProgramWithoutErrors();
     }
 
     private static void displaySumOfNumbers(long sum) {
         System.out.println("Sum of numbers " + sum);
-    }
-
-    private static void exitProgramWithoutErrors() {
-        System.exit(0);
     }
 }

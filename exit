@@ -1,0 +1,23 @@
+[33mcommit 9ca675a5e5299b6dbec6dac62fd27421943a4062[m[33m ([m[1;36mHEAD -> [m[1;32mcorrection[m[33m, [m[1;31morigin/correction[m[33m)[m
+Author: Wojciech <goleb.wojciech@gmail.com>
+Date:   Fri Mar 24 13:20:57 2023 +0100
+
+    aplication corrected as instructed
+
+[33mcommit 2c8e6d0367e925e0b8fd8963fb66a1ae7c4c339d[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Wojciech <goleb.wojciech@gmail.com>
+Date:   Fri Mar 24 08:53:07 2023 +0100
+
+    added simple JavaDoc annotation
+
+[33mcommit 2a1b0c1bdeb19317a7e8a10e04077f2f5eca1014[m
+Author: Wojciech <goleb.wojciech@gmail.com>
+Date:   Fri Mar 24 08:44:35 2023 +0100
+
+    first version of program
+
+[33mcommit a054db92c6695cbc9d330220ed7119dd471317a9[m
+Author: Wojciech <goleb.wojciech@gmail.com>
+Date:   Fri Mar 24 07:53:05 2023 +0100
+
+    Initial commit
