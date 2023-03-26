@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Input {
     private static final Scanner SCANNER = new Scanner(System.in);
 
-    public static int getIntFromUser(){
+    public static int getIntFromUser() {
         return getIntFromString(getStringFromUser());
     }
+
     public static int getIntFromString(String string) {
         try {
             return Integer.parseInt(string);
@@ -16,6 +17,7 @@ public class Input {
             return 0;
         }
     }
+
     public static String getStringFromUser() {
         return SCANNER.nextLine();
     }
