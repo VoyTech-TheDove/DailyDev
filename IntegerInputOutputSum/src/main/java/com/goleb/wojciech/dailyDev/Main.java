@@ -7,5 +7,6 @@ public class Main {
          */
         IntegerInputOutputSumApplication sumApplication = new IntegerInputOutputSumApplication();
         sumApplication.start();
+
     }
 }
