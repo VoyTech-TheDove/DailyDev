@@ -1,4 +1,4 @@
-package com.goleb.wojciech;
+package com.goleb.wojciech.dailyDev;
 
 import java.util.Scanner;
 
